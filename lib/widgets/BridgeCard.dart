@@ -25,7 +25,7 @@ Widget bridgeCard(BuildContext context, Bridge bridge) {
                   bridge.name,
                   style: Theme.of(context).textTheme.title,
                 ),
-                Text(bridge.lastUpdate.toUpperCase(),
+                Text('WENT UP ' + bridge.lastUpdate.toUpperCase(),
                     style: Theme.of(context).textTheme.caption)
               ],
             ),

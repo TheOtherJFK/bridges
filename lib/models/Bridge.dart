@@ -25,12 +25,12 @@ class Bridge {
     return Bridge(
       id: data['id'] ?? 0,
       name: data['name'] ?? '',
-      opened: 0,
+      opened: data['opened'] ?? 0,
       latitude: data['latitude'] ?? '',
       longitude: data['longitude'] ?? '',
       sort: data['sort'] ?? 0,
       updated: data['updated'] ?? DateTime.now(),
-      lastUpdate: '2 Hours Ago',
+      lastUpdate: data['last_update'] ?? '',
     );
   }
 
